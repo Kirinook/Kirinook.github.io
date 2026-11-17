@@ -20,12 +20,17 @@ h1{
     display:flex;
     flex-direction: column;
     width: 40%;
+    max-width: 50%;
 }
 
 #jobbKnapper a button{
-    font-size: 10%;
+    font-size: 6vw;
 }
 
+.darkHov button:hover{
+    background-color: darkslategrey;
+    border-color: darkslategray;
+}
 
 
 #superGifJobb{
@@ -37,6 +42,7 @@ h1{
 #gif{
     width: 60%;
     margin-left: auto;
+
     
 }
 
@@ -124,10 +130,6 @@ footer:hover{
 
 
 
-.darkHov button:hover{
-    background-color: darkslategrey;
-    border-color: darkslategray;
-}
 
 
 .HOV{
