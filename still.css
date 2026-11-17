@@ -89,44 +89,32 @@ footer{
     /* background-color: rgb(135,135,135); */
     background-color: var(--footColour);
 
-    padding: 15rem;
+    padding: 15vw;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 footer:hover{
     
 }
 
-#omMeg{
+/* #omMeg{
 
     position: relative ;
-    left: 20%;
+    left: 40vw;
     font-size: 1rem;
     padding: 0%;
 }
-#omMeg:hover{
-    position: relative ;
-    left: 20%;
 
-
-
-}
 #toppKnapp{
     position: relative;
-    right: 20%;
+    right: 40vw;
     font-size: 1rem;
     padding: 0%;
 }
-#toppKnapp:hover{
-    position: relative;
-    right: 20%;
-
-
-
-
-}
+ */
 
 
 
@@ -134,12 +122,18 @@ footer:hover{
 
 .HOV{
     transition:tranform  0.2s ease;
-    transform: scale(5);
-    border-width: 0.0001rem;
+    font-size: clamp(1rem,4rem,5rem);
+    border-width: 0.5rem;
     border-color: var(--footColour);
     border-style: solid;
     background-color: #f5f5f5;
+    display: flexbox;
+    
 
+}
+
+footer a{
+    padding: 0.2rem;
 }
 
 /* .HOV{
@@ -151,9 +145,7 @@ footer:hover{
 /* "." før navn refferer til class  */
 .HOV:hover{
     /* font-size: 2rem;
-    padding: 1rem 1rem; */
-    transform: scale(5);
-    border-width: 0.0001rem;
+
     /* border-color: rgb(100, 100, 200); */
     border-color: var(--footColour);
     border-style: outset;
@@ -165,7 +157,6 @@ footer:hover{
         border-style: outset;
     }
 }
-
 .HOV:active{
     border-style: inset;
 }
