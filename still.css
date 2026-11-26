@@ -59,6 +59,9 @@ h1{
     grid-area: superGifJobb;
 
 } */
+
+
+/* junk */
 #junk{
     grid-area: junk;
     padding: 2rem;
@@ -80,6 +83,9 @@ h1{
 :root{
     /* background-color: rgb(106, 106, 213) */
     --footColour:rgb(46, 58, 120);
+    --footFontS: clamp(3rem,5vw, 10rem);
+    --footFontL: clamp(3rem,5vw, 10rem);
+    --footFontL: clamp(3.06rem,5.1vw, 10.2rem); 
 }
 
 
@@ -89,68 +95,75 @@ footer{
     /* background-color: rgb(135,135,135); */
     background-color: var(--footColour);
 
-    padding: 15vw;
+    /* height: 20rem; */
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    padding-top: calc(var(--footFontS)*0.4);
+
 }
 footer:hover{
     
 }
-
-/* #omMeg{
-
-    position: relative ;
-    left: 40vw;
-    font-size: 1rem;
-    padding: 0%;
+footer div{
+    padding: calc(var(--footFontS)*0.4);
 }
-
-#toppKnapp{
-    position: relative;
-    right: 40vw;
-    font-size: 1rem;
-    padding: 0%;
-}
- */
-
-
 
 
 
 .HOV{
-    transition:tranform  0.2s ease;
-    font-size: clamp(1rem,4rem,5rem);
-    border-width: 0.5rem;
+    /* transition:tranform  0.2s ease; */
+
+
+    font-size: var(--footFontS);
     border-color: var(--footColour);
+
     border-style: solid;
     background-color: #f5f5f5;
-    display: flexbox;
-    
+    border-width: clamp(0.18rem,0.6vw,1.02rem);
+    /* padding: calc(var(--footFontS)*0.2); */
+    padding-right: calc(var(--footFontS)*0.4);
+    padding-left: calc(var(--footFontS)*0.4);
+}
+
+
+.feet{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+}
+
+#toppKnapp{
+    min-width: calc(var(--footFontL)*4);
 
 }
 
-footer a{
-    padding: 0.2rem;
+
+#omMeg{
+    min-width: calc(var(--footFontL)*9);
 }
 
-/* .HOV{
-    transition:tranform  0.2s ease;
-    transform: scale(1);
-    border-width: 0.0001rem;
-    border-color: rgba(100, 100, 200, 0);
-} */
-/* "." før navn refferer til class  */
+
+
 .HOV:hover{
     /* font-size: 2rem;
 
     /* border-color: rgb(100, 100, 200); */
-    border-color: var(--footColour);
+    /* border-color: var(--footColour); */
+
     border-style: outset;
-    
+    font-size: var(--footFontL);
+    border-width: clamp(0.15rem,0.5vw,1rem);
+    /* padding: calc(var(--footFontL)*0.2); */
+    padding-right: calc(var(--footFontL)*0.4);
+    padding-left: calc(var(--footFontL)*0.4);
+
 }
+/* "." før navn refferer til class  */
 
 @media(hover: hover) and (pointer: fine) {
     .Hov:hover{
@@ -159,6 +172,8 @@ footer a{
 }
 .HOV:active{
     border-style: inset;
+    font-size: calc(var(--footFontS)*0.975);
+    border-width: clamp(0.195rem,0.65vw,1.03rem);
 }
 /* active = pressed */
 
